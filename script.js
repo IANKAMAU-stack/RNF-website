@@ -12,7 +12,7 @@ document.body.style.transition = 'opacity 0.5s ease';
 // Hamburger menu toggle for mobile
 function toggleMenu() {
   const navLinks = document.querySelector('.nav-links');
-  if (navLinks) navLinks.classList.toggle('show');
+  if (navLinks) navLinks.classList.toggle('active');
 }
 
 // Navbar scroll effect
@@ -40,7 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
     // Close mobile menu if open
     const navLinks = document.querySelector('.nav-links');
-    if (navLinks) navLinks.classList.remove('show');
+    if (navLinks) navLinks.classList.remove('active');
   });
 });
 
